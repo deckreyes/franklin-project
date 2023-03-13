@@ -1,19 +1,23 @@
 .columns > div {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
 
 .columns img {
-  width: 100%;
-}
+  width: 300px; 
+  border-radius: 30px;
+ }
 
 .columns > div > div {
   order: 1;
+  
 }
 
 .columns > div > .columns-img-col {
   order: 0;
-}
+  flex: 1;  
+  align-self: flex-start;
+ }
 
 .columns > div > .columns-img-col img {
   display: block;
@@ -23,11 +27,11 @@
   .columns > div {
     align-items: center;
     flex-direction: unset;
-    gap: 32px;
+    /*gap: 32px;*/
   }
 
   .columns > div > div {
-    flex: 1;
+    flex: 2;
     order: unset;
   }
 }

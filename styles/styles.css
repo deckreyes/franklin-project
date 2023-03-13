@@ -16,8 +16,8 @@
   --link-hover-color: #136ff6;
   --background-color: #fff;
   --overlay-background-color: #eee;
-  --highlight-background-color: #ccc;
-  --text-color: #000;
+  --highlight-background-color: #0084D4;
+   --text-color: #000;
 
   /* fonts */
   --body-font-family: 'helvetica neue', helvetica, ubuntu, roboto, noto, sans-serif;
@@ -38,7 +38,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 110px;
 
 }
 
@@ -66,9 +66,30 @@ header {
   height: var(--nav-height);
 }
 
-h1, h2, h3,
-h4, h5, h6 {
-  font-family: var(--heading-font-family);
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url(https://little-forest-58aa.david8603.workers.dev/?url=https://mckessonideashare.com/wp-content/uploads/2021/07/LibreFranklin-Regular.ttf);
+}
+
+h3 { 
+  display: flex;
+  font-family: 'Libre Franklin';
+  font-weight: 200;
+  margin-top: 0em;
+  margin-bottom: .5em;  
+}
+
+h4 { 
+  font-family: 'Libre Franklin';
+  font-weight: 85;
+  line-height: 1.25;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  scroll-margin: calc(var(--nav-height) + 1em);
+}
+
+h1, h2, h5, h6 { 
+  font-family: 'Libre Franklin';
   font-weight: 600;
   line-height: 1.25;
   margin-top: 1em;
@@ -76,10 +97,11 @@ h4, h5, h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
+
 h1 { font-size: var(--heading-font-size-xxl) }
 h2 { font-size: var(--heading-font-size-xl) }
 h3 { font-size: var(--heading-font-size-l) }
-h4 { font-size: var(--heading-font-size-m) }
+h4 { font-size: 20px; }
 h5 { font-size: var(--heading-font-size-s) }
 h6 { font-size: var(--heading-font-size-xs) }
 
@@ -139,7 +161,7 @@ a.button:any-link, button {
   font-weight: 600;
   cursor: pointer;
   color: var(--background-color);
-  background-color: var(--link-color);
+  background-color: rgb(0, 128, 36);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
@@ -241,4 +263,17 @@ main .section[data-section-status='initialized'] {
 /* section metadata */
 main .section.highlight {
   background-color: var(--highlight-background-color);
+  color: white;
+}
+
+/* registration metadata */
+main .section.registration {  
+  display: flex;  
+  padding: 0.75rem 0.75rem;
+  height: 45px;
+  text-align: center;
+  background-color: #822582;
+  color: white;
+  font-family: 'Libre Franklin', Sans-serif;
+  font-size: 36px;               
 }
