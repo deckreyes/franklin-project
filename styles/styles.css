@@ -330,8 +330,8 @@ main .section.highlight {
   background-color: var(--highlight-background-color);
   color: white;
   font-family: 'Libre Franklin', Sans-serif;
-  font-size: 16px;   
-  padding: 0.75rem 0.75rem;  
+  font-size: 16px;    
+  padding: 0.75rem 0.75rem; 
 }
 
 main .section.highlight img {
