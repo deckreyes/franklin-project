@@ -277,3 +277,36 @@ main .section.registration {
   font-family: 'Libre Franklin', Sans-serif;
   font-size: 36px;               
 }
+
+/* updates metadata */
+main .section.updates {
+  padding: 0.75rem 0.75rem;
+  background-color: white;  
+  font-family: 'Libre Franklin', Sans-serif;
+  font-size: 13px;    
+}
+
+main .section.updates img {
+  width: 310px; 
+  border-radius: 30px;  
+  padding: 0.25rem 0.25rem; 
+}
+
+/* gallery metadata */
+main .section.archives {
+  padding: 0.75rem 0.75rem;   
+  text-align: center;
+}
+
+/* gallery metadata */
+main .section.gallery {
+  padding: 0.75rem 0.75rem;
+  background-color: white;
+  color: white;
+}
+
+main .section.gallery img {
+  width: 265px; 
+  border-radius: 30px;  
+  padding: 0.25rem 0.25rem; 
+}
