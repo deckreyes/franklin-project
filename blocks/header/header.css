@@ -161,6 +161,11 @@ header nav .nav-sections {
   background-color: var(--overlay-color);
 }
 
+.nav-sections a:hover {
+  color: #df850f;
+  text-decoration: none;
+}
+
 header nav[aria-expanded="true"] .nav-sections {
   display: block;
   visibility: visible;
@@ -238,7 +243,7 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections > ul > li > ul {
     display: none;
-    position: relative;
+    position: relative;   
   }
 
   header nav .nav-sections > ul > li[aria-expanded="true"] > ul {
@@ -248,8 +253,8 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     margin-top: 12px;
     padding: 1em;
-    background-color: var(--highlight-background-color);
-    white-space: initial;
+    background-color: white;
+    white-space: initial;    
   }
 
   header nav .nav-sections > ul > li > ul::before {
@@ -261,11 +266,12 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--highlight-background-color);
+    border-bottom: 8px solid white;
   }
 
   header nav .nav-sections > ul > li > ul > li {
-    padding: 8px 0;
+    padding: 4px 0;
+    border-bottom: .5px solid grey;
   }
 }
 

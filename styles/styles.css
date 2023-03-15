@@ -138,16 +138,6 @@ main pre {
   white-space: pre;
 }
 
-a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: var(--link-hover-color);
-}
-
 /* buttons */
 a.button:any-link, button {
   font-family: var(--body-font-family);
@@ -260,10 +250,23 @@ main .section[data-section-status='initialized'] {
   display: none;
 }
 
-/* section metadata */
-main .section.highlight {
-  background-color: var(--highlight-background-color);
-  color: white;
+main a:link, a:visited {
+  font-family: var(--body-font-family);
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 5px 30px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--background-color);
+  background-color: rgb(0, 128, 36);
+  margin: 16px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 30px;
 }
 
 /* registration metadata */
@@ -292,7 +295,18 @@ main .section.updates img {
   padding: 0.25rem 0.25rem; 
 }
 
-/* gallery metadata */
+main .section.updates a:link {
+  all: unset;
+  color: #007BCE;  
+  cursor: pointer;
+}
+
+main .section.updates a:hover {
+  text-decoration: underline;
+}
+
+
+/* archives metadata */
 main .section.archives {
   padding: 0.75rem 0.75rem;   
   text-align: center;
@@ -307,6 +321,21 @@ main .section.gallery {
 
 main .section.gallery img {
   width: 265px; 
+  border-radius: 30px;  
+  padding: 0.25rem 0.25rem; 
+}
+
+/* section metadata */
+main .section.highlight {
+  background-color: var(--highlight-background-color);
+  color: white;
+  font-family: 'Libre Franklin', Sans-serif;
+  font-size: 16px;   
+  padding: 0.75rem 0.75rem;  
+}
+
+main .section.highlight img {
+  width: 320px; 
   border-radius: 30px;  
   padding: 0.25rem 0.25rem; 
 }
