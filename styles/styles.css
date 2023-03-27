@@ -295,10 +295,11 @@ main .section.updates img {
   padding: 0.25rem 0.25rem; 
 }
 
-main .section.updates a:link {
+main .section.updates a {
   all: unset;
-  color: #007BCE;  
   cursor: pointer;
+  color: #007BCE; 
+  text-decoration: none;
 }
 
 main .section.updates a:hover {
