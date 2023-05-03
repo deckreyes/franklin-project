@@ -10,17 +10,18 @@ const { buildBlock, decorateBlock, loadBlock } = await import('../../../scripts/
 
 document.body.innerHTML = await readFile({ path: '../../scripts/body.html' });
 
+window.wknd = window.wknd || {};
+window.wknd.demoConfig = {
+  demoBase: '/test/blocks/header',
+};
+
 const sleep = async (time = 1000) => new Promise((resolve) => {
   setTimeout(() => {
     resolve(true);
   }, time);
 });
-const navMeta = document.createElement('meta');
-navMeta.setAttribute('name', 'nav');
-navMeta.setAttribute('content', 'https://main--helix-project-boilerplate--adobe.hlx.page/test/blocks/header/nav');
-document.head.append(navMeta);
 
-const headerBlock = buildBlock('header', [[]]);
+const headerBlock = buildBlock('header', [['Nav', '/test/blocks/header/nav']]);
 document.querySelector('header').append(headerBlock);
 decorateBlock(headerBlock);
 await loadBlock(headerBlock);
